@@ -15,7 +15,7 @@ swaggerDocument = require('./swagger.json');
 require('./src/services/mongoose.service')
 
 
-// const allowedOrigins = ['http://127.0.0.1:3001', 'http://localhost:3001','https://127.0.0.1:3001', 'https://localhost:3001', 'https://127.0.0.1:4002', 'https://localhost:4002','http://117.254.87.83:3001','https://117.254.87.83:3001','https://117.254.87.83:4001','http://117.254.87.83:4001','http://117.254.87.83:3001/','https://117.254.87.83:3001/', 'http://129.153.106.248/', 'https://129.153.106.248/'];
+// const allowedOrigins = ['http://10.10.120.190:3001', 'http://localhost:3001','https://127.0.0.1:3001', 'https://localhost:3001', 'https://10.10.120.9:4002', 'https://localhost:4002','http://10.10.120.190:3001','https://117.254.87.83:3001','https://10.10.120.190:4001','http://10.10.120.190:4001','http://117.254.87.83:3001/','https://10.10.120.190:3001/', 'http://129.153.106.248/', 'https://129.153.106.248/'];
 
 
 // app.use(cors({
