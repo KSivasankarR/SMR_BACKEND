@@ -2,10 +2,10 @@ pipeline {
     agent any
 
     environment {
-        PORT = '3004'
+        PORT = '4009'
         HOST = '0.0.0.0'
         APP_NAME = 'FIRMS_API'
-        APP_DIR = '/var/lib/jenkins/SMR_BACXKEND'
+        APP_DIR = '/var/lib/jenkins/SMR_BACKEND'
         PM2_HOME = '/var/lib/jenkins/.pm2'
     }
 
