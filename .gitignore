@@ -1,0 +1,31 @@
+# dependencies
+/node_modules
+/.env
+/.vscode
+
+# .bak Files
+*.bak
+
+# logs
+*.log
+
+.DS_Store
+
+package-lock.json
+
+serverlogs.log
+
+*/node_modules
+/uploads
+/public
+/pdf
+
+public/uploads/doc_husbandBirthProof-1665665742499Screenshot 2022-10-10 131835.png
+public/uploads/doc_husbandBirthProof-1665665752207Screenshot 2022-10-10 131835.png
+public/uploads/doc_husbandBirthProof-1665666089748Screenshot 2022-10-10 131835.png
+public/uploads/doc_husbandBirthProof-1665666116828Screenshot 2022-10-10 131835.png
+public/uploads/doc_husbandBirthProof-1665666240905Screenshot 2022-10-10 131835.png
+public/uploads/doc_husbandBirthProof-1665666269769Screenshot 2022-10-10 131835.png
+public/uploads/doc_husbandBirthProof-1665666297464Screenshot 2022-10-10 131835.png
+public/uploads/doc_husbandBirthProof-1665668443280Screenshot 2022-10-10 131835.png
+public/uploads/doc_husbandBirthProof-1665669394469Screenshot 2022-10-10 131835.png

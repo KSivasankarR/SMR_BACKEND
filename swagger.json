@@ -1,0 +1,133 @@
+{
+    "swagger": "2.0",
+    "info": {
+        "version": "1.0.0",
+        "title": "IGRS - SMR APIs",
+        "description": "Special Marriage Registration",
+        "license": {
+            "name": "SMR API",
+            "url": "https://opensource.org/licenses/MIT"
+        }
+    },
+    "host": "localhost:4002/smr/",
+    "basePath": "/",
+    "tags": [
+        {
+            "name": "Login",
+            "description": "Users Login"
+        },
+        {
+            "name": "Officer",
+            "description": "Officer Login"
+        },
+        {
+            "name": "Registration",
+            "description": "Application"
+        }
+    ],
+    "schemes": [
+        "http"
+    ],
+    "consumes": [
+        "application/json"
+    ],
+    "produces": [
+        "application/json"
+    ],
+    "paths": {
+        "users/login": {
+            "post": {
+                "tags": [
+                    "Login"
+                ],
+                "description": "Login the user system",
+                "parameters": [
+                    {
+                        "name": "Login",
+                        "in": "body",
+                        "description": "Login the User",
+                        "schema": {
+                            "$ref": "#/definitions/Login/request"
+                        }
+                    }
+                ],
+                "produces": [
+                    "application/json"
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Login Succeded",
+                        "schema": {
+                            "$ref": "#/definitions/Login/response"
+                        }
+                    }
+                }
+            }
+        }
+
+    },
+    "definitions": {
+        "Login": {
+            "request": {
+                "required": [
+                    "loginEmail",
+                    "loginPassword"
+                ],
+                "properties": {
+                    "loginEmail": {
+                        "type": "string",
+						"required":true
+                    },
+                    "loginPassword": {
+                        "type": "string",
+						"required":true
+                    }
+                }
+            },
+            "response": {
+                "required": [
+                    "status",
+                    "code",
+                    "data"
+                ],
+                "properties": {
+                    "status": {
+                        "type": "string"
+                    },
+                    "code": {
+                        "type": "string"
+                    },
+                    "data": {
+                        "required": [
+                            "_id",
+                            "userId",
+                            "loginEmail",
+                            "loginMobile",
+                            "token"
+                        ],
+                        "properties": {
+                            "_id": {
+                                "type": "string"
+                            },
+                            "userId": {
+                                "type": "string"
+                            },
+                            "loginEmail": {
+                                "type": "string"
+                            },
+                            "loginMobile": {
+                                "type": "string"
+                            },
+                            "loginType": {
+                                "type": "string"
+                            },
+                            "token": {
+                                "type": "string"
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

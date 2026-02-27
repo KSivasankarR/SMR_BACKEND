@@ -1,0 +1,8 @@
+.git
+.gitlab-ci.yml
+.nyc_output
+coverage
+node_modules
+helm
+**/__mocks__
+**/__tests__
